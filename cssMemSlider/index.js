@@ -39,9 +39,12 @@ class Slider {
   sliderControls() {
     for (let i = 0; i < this.pictures.length; i++) {
       const NEW_CONTROL = document.createElement('div');
+      NEW_CONTROL.classList.add('container');
       i === 0 ? NEW_CONTROL.classList.add('active') : '';
       NEW_CONTROL.dataset.id = i;
+      const INNER_CIRCLE =  document.createElement('div');
       this.activeElement = 0;
+      NEW_CONTROL.appendChild(INNER_CIRCLE);
       document.querySelector('#slider-controls').appendChild(NEW_CONTROL);
     }
   }
@@ -63,12 +66,16 @@ window.addEventListener('load', () => {
 }, true);   
 
 document.querySelector('#slider-controls').addEventListener('click', (event) => {
-  if (event.target.dataset.id !== undefined) {
-    fadeOut(event.target.dataset.id);
+  let { target } = event;
+  if (!target.classList.length) {
+    target = event.path['1'];
+  }
+  if (target.dataset.id !== undefined) {
+    fadeOut(target.dataset.id);
   }});
 
 document.querySelector('#slider-picture').addEventListener('animationend', (animation) => {
-  if (event.target.dataset.id !== undefined) {
+  if (animation.target.dataset.id !== undefined) {
     const SLIDER_IMG = document.querySelector('#slider-picture img');
     const SLIDER_TEXT = document.querySelector('#slider-text');
     if (animation.animationName === 'fade-out') {

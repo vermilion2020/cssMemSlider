@@ -23,8 +23,8 @@ body {
 }
 
 .slider-footer {
-  margin-top: 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -39,7 +39,16 @@ body {
   gap: 10px;
 }
 
-.slider-controls div {
+.container {
+  width: 24px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.container div {
   width: 14px;
   height: 14px;
   border-radius: 200%;
@@ -48,16 +57,16 @@ body {
   cursor: pointer;
 }
 
-.slider-controls div:hover { 
+.container:hover > div { 
   background-color: #FFF;
   border: 2px solid #FFF;
 }
 
-.slider-controls div.active { 
+.container.active > div  { 
   background-color: #25282a;
 }
 
-.slider-controls div.active:hover { 
+.container.active:hover > div { 
   border: 2px solid #FFF;
 }
 
