@@ -1,18 +1,27 @@
-const SLIDER_INFO = [{
-  image: 'cats-and-nata.jpg',
-  text: 'Наташа, мы все уронили'
+const SLIDER_INFO = [
+{
+  image: 'skala.jpg',
+  text: 'Rock! What?'
+},
+{
+  image: 'ptici.jpg',
+  text: 'Birds are affraid of heights!'
+},
+{
+image: 'cats-and-nata.jpg',
+text: 'Natasha, get up! We\'ve ruined everything!'
 },
 {
   image: 'chipseki.png',
-  text: 'Чипсеки!'
+  text: 'Chipseki!'
 },
 {
   image: 'dog-in-fire.webp',
-  text: 'Собака в огне'
+  text: 'Dog is on fire'
 },
 {
   image: 'food-not-free.jpg',
-  text: 'Толстая собачка'
+  text: 'Food is not free :('
 }];
 
 class Slider {
