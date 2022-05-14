@@ -89,3 +89,15 @@ body {
   animation-name: fade-out;
   animation-duration: 1s;
 }
+
+@media screen and (max-width: 767px) {
+  .slider-footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .slider-text {
+    align-self: flex-start;
+  }
+}
