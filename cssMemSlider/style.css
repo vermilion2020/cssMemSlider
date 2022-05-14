@@ -65,6 +65,11 @@ body {
   border: 2px solid #FFF;
 }
 
+.container:active > div { 
+  background-color: rgb(240, 247, 177);
+  border: 2px solid rgb(240, 247, 177);
+}
+
 .container.active > div  { 
   background-color: #25282a;
 }
