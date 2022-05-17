@@ -35,12 +35,12 @@ input[type=radio] {
   animation-duration: 1s;
 }
 
-#slide-0:checked~.container:nth-of-type(0) > div,
-#slide-1:checked~.container:nth-of-type(1) > div,
-#slide-2:checked~.container:nth-of-type(2) > div,
-#slide-3:checked~.container:nth-of-type(3) > div,
-#slide-4:checked~.container:nth-of-type(4) > div,
-#slide-5:checked~.container:nth-of-type(5) > div {
+#slide-0:checked~.slider-footer #control-0 > div,
+#slide-1:checked~.slider-footer #control-1 > div,
+#slide-2:checked~.slider-footer #control-2 > div,
+#slide-3:checked~.slider-footer #control-3 > div,
+#slide-4:checked~.slider-footer #control-4 > div,
+#slide-5:checked~.slider-footer #control-5 > div {
   background-color: #25282a;
 }
 
