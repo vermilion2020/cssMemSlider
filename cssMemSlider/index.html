@@ -9,13 +9,46 @@
 </head>
 <body>
   <div class="slider-container">
-    <div class="slider-picture" id="slider-picture">
+    <input type="radio" name="radio-btn" id="slide-0" checked>
+    <input type="radio" name="radio-btn" id="slide-1">
+    <input type="radio" name="radio-btn" id="slide-2">
+    <input type="radio" name="radio-btn" id="slide-3">
+    <input type="radio" name="radio-btn" id="slide-4">
+    <input type="radio" name="radio-btn" id="slide-5">
+    <div class="slider-picture" id="slider-picture-0">
+      <img data-id="0" src="images/skala.jpg" alt="Rock! What?">
+    </div>
+    <div class="slider-picture" id="slider-picture-1">
+      <img data-id="1" src="images/ptici.jpg" alt="Birds are affraid of heights!">
+    </div>
+    <div class="slider-picture" id="slider-picture-2">
+      <img data-id="2" src="images/cats-and-nata.jpg" alt="Natasha, get up! We've ruined everything!">
+    </div>
+    <div class="slider-picture" id="slider-picture-3">
+      <img data-id="3" src="images/chipseki.png" alt="Chipseki!">
+    </div>
+    <div class="slider-picture" id="slider-picture-4">
+      <img data-id="4" src="images/dog-in-fire.webp" alt="Dog is on fire">
+    </div>
+    <div class="slider-picture" id="slider-picture-5">
+      <img data-id="5" src="images/food-not-free.jpg" alt="Food is not free :(">
     </div>
     <div class="slider-footer">
-      <div class="slider-text" id="slider-text"></div>
-      <div class="slider-controls" id="slider-controls"></div>
+      <div class="slider-text" id="slider-text-0">Rock! What?</div>
+      <div class="slider-text" id="slider-text-1">Birds are affraid of heights!</div>
+      <div class="slider-text" id="slider-text-2">Natasha, get up! We\'ve ruined everything!</div>
+      <div class="slider-text" id="slider-text-3">Chipseki!</div>
+      <div class="slider-text" id="slider-text-4">Dog is on fire</div>
+      <div class="slider-text" id="slider-text-5">Food is not free :(</div>
+      <div class="slider-controls" id="slider-controls">
+        <label for="slide-0"><div class="container active" data-id="0"><div></div></div></label>
+        <label for="slide-1"><div class="container" data-id="1"><div></div></div></label>
+        <label for="slide-2"><div class="container" data-id="2"><div></div></div></label>
+        <label for="slide-3"><div class="container" data-id="3"><div></div></div></label>
+        <label for="slide-4"><div class="container" data-id="4"><div></div></div></label>
+        <label for="slide-5"><div class="container" data-id="5"><div></div></div></label>
+      </div>
     </div>
   </div>
-  <script src="index.js"></script>
 </body>
 </html>
